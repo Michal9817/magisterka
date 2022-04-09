@@ -1,0 +1,28 @@
+DataPointName,IecDataType,IsExpliciteChannel,WriteFunctionCode,ReadFunctionCode,WriteAddress,ReadAddress,WriteBitPosition,ReadBitPosition,InternalUsedDatatype,DataPointType,TypeSpecificSetting
+Application.Modbus.test_var1,WORD,False,0,3,0,0,0,0,WORD,CDS3DataPoint,V1|Application.Modbus.test_var1|RO|RW|0|0|0|R
+Application.Modbus.test_var2,REAL,False,0,3,0,2,0,0,REAL,CDS3DataPoint,V1|Application.Modbus.test_var2|RO|RW|2|0|32|R
+Application.Modbus.test_var3,INT,False,0,3,0,1,0,0,INT,CDS3DataPoint,V1|Application.Modbus.test_var3|RO|RW|1|0|16|R
+Application.Modbus.test_var4,ARRAY[0..3] OF BYTE,False,0,3,0,4,0,0,TIME,CDS3DataPoint,V1|Application.Modbus.test_var4|RO|RW|4|0|64|R
+wWatchdogCommand,WORD,True,6,0,64000,0,0,0,,SpecialRegister,
+wWatchdogTimeOut,WORD,True,6,3,64001,64001,0,0,,SpecialRegister,
+wWatchdogState,WORD,True,0,3,0,64002,0,0,,SpecialRegister,
+wWatchdogConfig,WORD,True,6,3,64003,64003,0,0,,SpecialRegister,
+wWatchdogTcpConn,WORD,True,6,3,64004,64004,0,0,,SpecialRegister,
+wLEDErrorCode,ARRAY[0..2] OF WORD,True,0,3,0,64010,0,0,,SpecialRegister,
+wPlcState,WORD,True,0,3,0,64013,0,0,,SpecialRegister,
+wOrderNumber,ARRAY[0..3] OF WORD,True,0,3,0,64016,0,0,,SpecialRegister,
+wFirmwareVersion,WORD,True,0,3,0,64020,0,0,,SpecialRegister,
+wHardwareVersion,WORD,True,0,3,0,64021,0,0,,SpecialRegister,
+wFirmwareloaderVersion,WORD,True,0,3,0,64022,0,0,,SpecialRegister,
+wProcessImageVersion,WORD,True,0,3,0,64023,0,0,,SpecialRegister,
+wLengthProcessimageInput,WORD,True,0,3,0,64064,0,0,,SpecialRegister,
+wLengthProcessimageAnalogueInput,WORD,True,0,3,0,64065,0,0,,SpecialRegister,
+wLengthProcessimageDigitalInput,WORD,True,0,3,0,64066,0,0,,SpecialRegister,
+wLengthProcessimageOutput,WORD,True,0,3,0,64067,0,0,,SpecialRegister,
+wLengthProcessimageAnalogueOutput,WORD,True,0,3,0,64068,0,0,,SpecialRegister,
+wLengthProcessimageDigitalOutput,WORD,True,0,3,0,64069,0,0,,SpecialRegister,
+wMacId1,ARRAY[0..2] OF WORD,True,0,3,0,64032,0,0,,SpecialRegister,
+wConst1234,WORD,True,0,3,0,64160,0,0,,SpecialRegister,
+wConstAAAA,WORD,True,0,3,0,64161,0,0,,SpecialRegister,
+wConst5555,WORD,True,0,3,0,64162,0,0,,SpecialRegister,
+wLiveRegister,WORD,True,0,3,0,64250,0,0,,SpecialRegister,
